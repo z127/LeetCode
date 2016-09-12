@@ -15,8 +15,7 @@ Return 167
 nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
 coins =  3x1x5      +  3x5x8    +  1x3x8      + 1x8x1   = 167
   
-#解题思路
--该题是一道动态规划题，dp[l][r]表示（l,r）范围内扎破气球的最大硬币数,不含边界.
-状态转移方程为 left<i<right
-dp[left][right]=max(dp[left][i]+nums[l]*nums[i]*nums[r]+dp[i][right],dp[left][right])
--要计算dp[left][right]需要根据题设算出最小的dp[left][right],k=right-left=2,随着k增加，right-left逐渐增大。dp[0][n-1]求出为最大值
+##解题思路
+1.该题是一道动态规划题，dp[l][r]表示（l,r）范围内扎破气球的最大硬币数,不含边界.
+状态转移方程为 left<i<right dp[left][right]=max(dp[left][i]+nums[l]*nums[i]*nums[r]+dp[i][right],dp[left][right])
+2.要计算dp[left][right]需要根据题设算出最小的dp[left][right],k=right-left=2,随着k增加，right-left逐渐增大。dp[0][n-1]求出为最大值
