@@ -17,7 +17,4 @@ Return
 3.    最后用递归的方法，来判断整个字符串有几种划分方式。
 4.    最后要注意因为传进去的list变量sol的本质是一个引用，所以每次得到一个数据的时候都要根据传进来的list，new一个新的list。不要会导致list混乱。
         
-*   A list item with a blockquote:
 
-    > This is a blockquote
-    > inside a list item.
