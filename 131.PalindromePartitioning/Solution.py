@@ -19,13 +19,12 @@ class Solution(object):
 			results.append(sol)
 			return
 		i=start 
-		while i <len(s):
+		for i in range(start,len(s),1):
 			if pali[start][i]==1 :
 				#每次获得一个新的数据，根据函数传进来的sol-list,新建一个list。不然临时变量会修改数据。
 				tmp=list(sol)
 				tmp.append(s[start:i+1])
 				self.getlist(s,i+1, pali,results,tmp)
-			i=i+1
 
 					
 
